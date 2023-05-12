@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra năm nhuận</title>
+</head>
+<body>
+<script>
+  /*let year=parseInt(prompt("Enter a year"))
+  if (year%4==0) {
+    if (year%100) {
+      if (year%400) {
+        alert(year + " is a leap year");
+      }else {
+        alert(year+ " is NOT a leap year");
+      }
+    }else {
+      alert(year + " is a leap year");
+    }
+  }else {
+    alert(year + " is NOT a leap year");
+  }*/
+
+  /*let year = parseInt(prompt("Enter a year"));
+  let a = false;
+  if (year%4==0) {
+    if (year%100==0) {
+      if (year%400==0) {
+        a = true;
+      }
+    }else a = true;
+  }
+  if (a) {
+    alert(year + " is leap year");
+  }else  {
+    alert(year + " is NOT leap year")
+  }*/
+
+
+let year = parent(prompt("Enter a year"));
+  let a = false;
+  let b4 = year%4==0;
+  if (b4) {
+      let b100 = year%100==0;
+      if (b100) {
+          let b400 = year%400==0;
+          if (b400) {
+              a=true;
+          }
+      }else {
+          a=true;
+      }
+
+  }
+  if (a) {
+      alert(year + " is a leap year");
+  }else
+      alert(year+ "is NOT a leap year")
+</script>
+</body>
+</html>
